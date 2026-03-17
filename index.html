@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Personal Website</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============================================
+         LOADING ANIMATION
+    ============================================= -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <!-- ============================================
+         NAVIGATION BAR
+    ============================================= -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- HIMESH KUMAR KASHYAP: Your Name/Logo -->
+            <a href="#home" class="logo">HIMESH KUMAR KASHYAP</a>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#qualifications" class="nav-link">Qualifications</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Dark/Light Mode Toggle -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO SECTION (HOME)
+    ============================================= -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- HIMESH K: Your Name -->
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">HIMESH K</span>
+                </h1>
+                
+                <!-- WELCOME HERE: Your Tagline (Typing Effect) -->
+                <p class="hero-subtitle">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor">|</span>
+                </p>
+                
+                <!-- ...: Short tagline description -->
+                <p class="hero-description">
+                    Building digital experiences that make a difference. 
+                    Passionate about creating elegant solutions to complex problems.
+                </p>
+                
+                <!-- CTA Buttons -->
+                <div class="hero-buttons">
+                    <!-- EDIT HERE: Update href to point to your portfolio section or resume -->
+                    <a href="#achievements" class="btn btn-primary">
+                        <i class="fas fa-briefcase"></i> View Portfolio
+                    </a>
+                    <!-- EDIT HERE: Link to your resume PDF -->
+                    <a href="resume.pdf" class="btn btn-secondary" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Profile Photo -->
+            <div class="hero-image">
+                <!--"C:\Users\himes\Pictures\img\my image.jpeg": Replace with your photo path -->
+                <div class="profile-wrapper">
+                    <img src="my image.jpeg" alt="Profile Photo" class="profile-img" id="profileImg">
+                    <div class="profile-ring"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-down">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT SECTION
+    ============================================= -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            
+            <div class="about-content">
+                <!-- Photo Section -->
+                <div class="about-image">
+                    <!-- EDIT HERE: Replace with your detailed photo -->
+                    <img src="mylogo.jpeg" alt="About Me" class="about-img">
+                    <div class="image-decoration"></div>
+                </div>
+                
+                <!-- Bio & Details -->
+                <div class="about-info">
+                    <!-- EDIT HERE: Your Bio -->
+                    <h3 class="about-heading">Who I Am</h3>
+                    <p class="about-text">
+                        I'm a passionate developer and lifelong learner dedicated to creating 
+                        meaningful digital experiences. With a strong foundation in web development 
+                        and a keen eye for design, I strive to build applications that are both 
+                        functional and visually appealing. 
+                    </p>
+                    <p class="about-text">
+                        My journey in technology has been driven by curiosity and a desire to 
+                        continuously learn and grow. I believe in the power of technology to 
+                        solve real-world problems and make a positive impact.
+                    </p>
+                    
+                    <!-- Personal Details -->
+                    <div class="personal-details">
+                        <!-- EDIT HERE: Your Personal Details -->
+                        <div class="detail-item">
+                            <i class="fas fa-user"></i>
+                            <span class="detail-label">Name:</span>
+                            <span class="detail-value">HIMESH KUMAR KASHYAP</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="detail-label"> Temp. Location:</span>
+                            <span class="detail-value">SRM-IST,Tiruchhirappali,India</span>
+                        </div>
+                         <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="detail-label">Perm. Location:</span>
+                            <span class="detail-value">Rajbiraj-5,Saptari,Nepal</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <span class="detail-label">Personal Email:</span>
+                            <span class="detail-value">jhahimesh123@gmail.com</span>
+                        </div>
+                          <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <span class="detail-label"> SRM Email:</span>
+                            <span class="detail-value">hk7912@srmist.edu.in</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-heart"></i>
+                            <span class="detail-label">Interests:</span>
+                            <span class="detail-value">Coding, Reading, Photography</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-bullseye"></i>
+                            <span class="detail-label">Goals:</span>
+                            <span class="detail-value">Attain as much Knowledge as Possible</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="about-social">
+                        <!-- EDIT HERE: Your Social Links -->
+                        <a href="https://www.linkedin.com/in/himesh-kumar-kashyap-271994377?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                       
+                        <a href="https://www.instagram.com/jhahimesh5.5?igsh=NWx0c3oyazJkYjI=" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         QUALIFICATIONS SECTION (EDUCATION)
+    ============================================= -->
+    <section id="qualifications" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="highlight">Journey</span></h2>
+                <p class="section-subtitle">Education & Qualifications</p>
+            </div>
+            
+            <!-- Timeline Layout -->
+            <div class="timeline">
+                <!-- EDIT HERE: Add/Modify your education entries -->
+                
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">----  -  ----</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Master's Degree in Computer Science</h3>
+                        <p class="timeline-institution">(In near future)</p>
+                        <p class="timeline-description">
+                            NULL
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025 - 2029</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Bachelor's Degree in Computer Science</h3>
+                        <p class="timeline-institution">SRM-University,Tiruchhirappalli</p>
+                        <p class="timeline-description">
+                             Will Graduated in 2029' Focused on web development, databases, 
+                            and software engineering principles.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - 2025</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">SLC(NEPAL)</h3>
+                        <p class="timeline-institution">Arniko Awasiya ,Biratnagar,Nepal</p>
+                        <p class="timeline-description">
+                            Majored in Science with emphasis on Mathematics and Physics. 
+                            Active member of the coding club.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ACHIEVEMENTS SECTION
+    ============================================= -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Achievements & <span class="highlight">Work</span></h2>
+                <p class="section-subtitle">Awards, Certifications & Projects</p>
+            </div>
+            
+            <!-- Card Grid -->
+            <div class="achievements-grid">
+                <!-- EDIT HERE: Add/Modify your achievements -->
+                
+                <!-- Achievement Card 1 -->
+                <div class="achievement-card">
+                    <div class="card-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="card-title">Best Student Award</h3>
+                    <p class="card-subtitle">University, 2024</p>
+                    <p class="card-description">
+                        Received for outstanding academic performance and contributions 
+                        to the computer science department.
+                    </p>
+                </div>
+                
+                <!-- Achievement Card 2 -->
+                <div class="achievement-card">
+                    <div class="card-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="card-title">AWS Certified Developer</h3>
+                    <p class="card-subtitle">Amazon Web Services, 2023</p>
+                    <p class="card-description">
+                        Validated expertise in developing and maintaining AWS applications 
+                        with best practices.
+                    </p>
+                </div>
+                
+                <!-- Achievement Card 3 -->
+                <div class="achievement-card">
+                    <div class="card-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="card-title">E-Commerce Platform</h3>
+                    <p class="card-subtitle">Personal Project, 2023</p>
+                    <p class="card-description">
+                        Built a full-stack e-commerce platform with React, Node.js, 
+                        and MongoDB. Handles 1000+ daily users.
+                    </p>
+                </div>
+                
+                <!-- Achievement Card 4 -->
+                <div class="achievement-card">
+                    <div class="card-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="card-title">Hackathon Winner</h3>
+                    <p class="card-subtitle">TechCrunch 2023</p>
+                    <p class="card-description">
+                        First place for developing an innovative solution for 
+                        sustainable urban farming.
+                    </p>
+                </div>
+                
+                <!-- Achievement Card 5 -->
+                <div class="achievement-card">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="card-title">Open Source Contributor</h3>
+                    <p class="card-subtitle">GitHub, 2022-Present</p>
+                    <p class="card-description">
+                        Active contributor to multiple open source projects with 
+                        50+ merged pull requests.
+                    </p>
+                </div>
+                
+                <!-- Achievement Card 6 -->
+                <div class="achievement-card">
+                    <div class="card-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="card-title">Portfolio Website</h3>
+                    <p class="card-subtitle">Freelance Project, 2022</p>
+                    <p class="card-description">
+                        Designed and developed a responsive portfolio website 
+                        for a local business owner.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SKILLS SECTION
+    ============================================= -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+                <p class="section-subtitle">Technical & Soft Skills</p>
+            </div>
+            
+            <div class="skills-container">
+                <!-- Technical Skills -->
+                <div class="skills-category">
+                    <h3 class="skills-category-title">
+                        <i class="fas fa-code"></i> Technical Skills
+                    </h3>
+                    
+                    <!-- EDIT HERE: Modify skill names and percentages -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML5 & CSS3</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript / TypeScript</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">React / Vue</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Node.js / Python</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Database (SQL/NoSQL)</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Soft Skills -->
+                <div class="skills-category">
+                    <h3 class="skills-category-title">
+                        <i class="fas fa-users"></i> Soft Skills
+                    </h3>
+                    
+                    <!-- EDIT HERE: Modify soft skills -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Communication</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Problem Solving</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Teamwork</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Time Management</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Adaptability</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT SECTION
+    ============================================= -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <p class="section-subtitle">Let's Connect & Collaborate</p>
+            </div>
+            
+            <div class="contact-container">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3 class="contact-heading">Let's Talk</h3>
+                    <p class="contact-text">
+                        Feel free to reach out if you have any questions, want to collaborate, 
+                        or just want to say hello. I'm always excited to connect with new people!
+                    </p>
+                    
+                    <!-- Contact Details -->
+                    <div class="contact-details">
+                        <!-- EDIT HERE: Your contact information -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-item-info">
+                                <span class="contact-label">Email</span>
+                                <!-- EDIT HERE: Your email -->
+                                <a href="jhahimesh123@gmail.com" class="contact-value">
+                                   jhahimesh123@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-item-info">
+                                <span class="contact-label">Phone</span>
+                                <!-- EDIT HERE: Your phone number -->
+                                <a href="tel:+1234567890" class="contact-value">+91 73669 09384 (India)
+                                    <br> +977 9765712790 / +977 9702035376 (Nepal)
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-item-info">
+                                <span class="contact-label">Current Location</span>
+                                <span class="contact-value">SRM University,Tiruchhirappali</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="contact-social">
+                        <h4 class="social-heading">Follow Me</h4>
+                        <div class="social-icons">
+                            <!-- EDIT HERE: Your social links -->
+                            <a href="https://www.linkedin.com/in/himesh-kumar-kashyap-271994377?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                          
+                            <a href="https://www.instagram.com/jhahimesh5.5?igsh=NWx0c3oyazJkYjI=" target="_blank" class="social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-input" 
+                                   placeholder="First & Last" required>
+                            <span class="form-error" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" name="email" class="form-input" 
+                                   placeholder="xyz@example.com" required>
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" 
+                                   placeholder="Project Inquiry" required>
+                            <span class="form-error" id="subjectError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-input form-textarea" 
+                                      placeholder="Your message here..." rows="5" required></textarea>
+                            <span class="form-error" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    
+                    <!-- Success/Error Messages -->
+                    <div class="form-message" id="formMessage"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Footer Brand -->
+                <div class="footer-brand">
+                    <!-- EDIT HERE: Your name -->
+                    <h3 class="footer-logo">HIMESH K</h3>
+                    <p class="footer-tagline">Building digital experiences that matter.</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#qualifications">Qualifications</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="footer-social">
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="footer-social-icons">
+                        <!-- EDIT HERE: Your social links -->
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Himesh Kumar KASHYAP. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         SCROLL TO TOP BUTTON
+    ============================================= -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
