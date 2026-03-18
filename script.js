@@ -436,7 +436,7 @@ function updateFooterYear() {
     const footerYear = document.querySelector('.footer-bottom p');
     if (footerYear) {
         const currentYear = new Date().getFullYear();
-        footerYear.textContent = `© ${currentYear} Your Name. All Rights Reserved.`;
+        footerYear.textContent = `© ${currentYear} Himesh Kumar Kashyap. All Rights Reserved.`;
     }
 }
 
