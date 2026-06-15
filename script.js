@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initScrollToTop();
     initMobileMenu();
     initScrollAnimations();
-    initFormValidation();
+   // initFormValidation();
     
 });
 
