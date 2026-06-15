@@ -92,7 +92,8 @@ function initTypingEffect() {
         'Student',
         'Developer',
         'Designer',
-        'Learner'
+        'Learner',
+        'Freelancer'
     ];
     
     // Configuration
